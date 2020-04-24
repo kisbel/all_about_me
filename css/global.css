@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Prata', serif;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+li {
+    list-style-type: none;
+}
+
+nav {
+    background-color:pink;
+    position: fixed;
+    left: 0; 
+    top: 0;
+    right: 0; 
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    padding: 15px;
+    display: block; /*because the padding wasnt applying*/
+}
+
+main {
+    margin-top: 64px;
+}
+
+.current-page {
+    background-color: lightskyblue;
+}
+
+nav ul li a:hover {
+    background-color: lightblue;
+}

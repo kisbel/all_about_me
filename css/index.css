@@ -1,0 +1,26 @@
+main {
+    text-align: center;
+}
+
+#profile-pic {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /*supposed to change size according to container size?*/
+    transition: 1s /*to make the transition of the hover down below smooth, both when your mouse applies and wanes*/ 
+}
+
+#profile-pic:hover {
+    transform: scale(1.3) /*i like that alice goes over ok!!!*/
+}
+
+#language-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px)); /*auto-fit will always try to resize so it always stays in the template assigned*/
+    grid-gap: 10px;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+#language-list img {
+    width: 100%;
+}
